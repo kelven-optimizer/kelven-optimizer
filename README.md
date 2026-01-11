@@ -1,4 +1,4 @@
-# 🚀 Kelven Optimizer PRO v7.0 - Beta Test 1.0
+# 🚀 Kelven Optimizer PRO  - Beta Test 1.0
 
 &gt; **Painel de Otimização Windows Completo**  
 &gt; Desenvolvido por kelvenapk | Cleanup Pro | 150+ Tweaks Reais | Sistema Completo
