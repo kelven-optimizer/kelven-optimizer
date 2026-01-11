@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelven Optimizer PRO - Beta Test | Painel de Otimização Windows</title>
+    <meta name="description" content="Kelven Optimizer PRO v7.0 - Painel de otimização Windows com 150+ tweaks reais. Cleanup Pro, Gaming Ultimate, Performance Boost e muito mais.">
+    <meta name="keywords" content="kelven optimizer, otimização windows, performance, gaming, tweaks, cleanup, fps boost">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Kelven Optimizer PRO - Beta Test">
+    <meta property="og:description" content="Painel de otimização Windows com 150+ tweaks reais para máxima performance">
+    <meta property="og:image" content="https://kelvenoptimizer.vercel.app/og-image.png">
+    <meta property="og:url" content="https://kelvenoptimizer.vercel.app/">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <style>
+        :root {
+            --primary: #0066FF;
+            --secondary: #00C896;
+            --success: #00D68F;
+            --warning: #FFAA00;
+            --danger: #FF4757;
+            --info: #00C9FF;
+            --dark: #0D1117;
+            --darker: #010409;
+            --card: #161B22;
+            --hover: #21262D;
+            --border: #30363D;
+            --text: #F0F6FC;
+            --text-secondary: #8B949E;
+            --matrix: #00FF88;
+            --purple: #8957E5;
+            --cyan: #00E5FF;
+            --orange: #FF8C00;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--darker);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--card) 100%);
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(0, 102, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(0, 200, 150, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 80%, rgba(0, 201, 255, 0.1) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(10px) rotate(-1deg); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo-icon {
+            font-size: 3rem;
+            background: linear-gradient(45deg, var(--primary), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .logo-text h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, var(--text), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary), var(--purple));
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--text), var(--primary), var(--cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), var(--purple));
+            color: white;
+            box-shadow: 0 4px 15px rgba(0, 102, 255, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.4);
+        }
+
+        .btn-secondary {
+            background: var(--card);
+            color: var(--text);
+            border: 1px solid var(--border);
+        }
+
+        .btn-secondary:hover {
+            background: var(--hover);
+            transform: translateY(-2px);
+        }
+
+        /* Features Grid */
+        .features {
+            padding: 6rem 0;
+            background: var(--dark);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--text), var(--primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-secondary);
+            margin-bottom: 4rem;
+            font-size: 1.1rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, var(--card) 0%, var(--hover) 100%);
+            padding: 2rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 102, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .feature-card:hover::before {
+            left: 100%;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 30px rgba(0, 102, 255, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .feature-description {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Stats Section */
+        .stats {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--purple) 100%);
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item {
+            padding: 1rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Beta Info */
+        .beta-info {
+            padding: 6rem 0;
+            background: var(--darker);
+        }
+
+        .beta-card {
+            background: linear-gradient(135deg, var(--card) 0%, var(--hover) 100%);
+            padding: 3rem;
+            border-radius: 1rem;
+            border: 1px solid var(--border);
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .beta-badge {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--warning), var(--orange));
+            color: var(--dark);
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2rem;
+        }
+
+        .beta-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .beta-description {
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .discord-button {
+            background: linear-gradient(45deg, #5865F2, #7289DA);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(88, 101, 242, 0.3);
+        }
+
+        .discord-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(88, 101, 242, 0.4);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            padding: 3rem 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer-text {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--primary);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .logo-text h1 {
+                font-size: 2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: var(--primary);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Matrix Effect */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .matrix-text {
+            position: absolute;
+            color: var(--matrix);
+            font-family: monospace;
+            font-size: 14px;
+            animation: matrix-fall linear infinite;
+        }
+
+        @keyframes matrix-fall {
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <!-- Matrix Background Effect -->
+    <div class="matrix-bg" id="matrixBg"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-bg"></div>
+        <div class="container">
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">
+                    <h1>Kelven Optimizer PRO</h1>
+                    <span class="version-badge">Beta Test 1.0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Painel de Otimização Windows</h2>
+            <p class="hero-subtitle">
+                Cleanup Pro | 150+ Tweaks Reais | Sistema Completo de Monitoramento
+            </p>
+            <div class="cta-buttons">
+                <a href="https://discord.gg/YnWMgwDgEq" target="_blank" class="btn btn-primary">
+                    <span>💬 Entrar no Discord de Suporte</span>
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <span>📋 Ver Funcionalidades</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Tweaks Reais</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">0.5ms</span>
+                    <span class="stat-label">Timer Resolution</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Funcional</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">+FPS</span>
+                    <span class="stat-label">Ganho de Performance</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Otimizações Avançadas</h2>
+            <p class="section-subtitle">Tecnologia de ponta para extrair o máximo desempenho do seu sistema</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Performance Extrema</h3>
+                    <p class="feature-description">
+                        Agendamento avançado de CPU, gerenciamento de memória e otimizações de plano de energia. 
+                        Alcance máximo FPS e latência mínima.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3 class="feature-title">Modo Gamer</h3>
+                    <p class="feature-description">
+                        Otimização do Game Mode, desativa DVR, resolução do timer em 0.5ms e tweaks específicos 
+                        para jogos competitivos.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Monitor em Tempo Real</h3>
+                    <p class="feature-description">
+                        Monitor KelvenOS Performance com sistema de feedback visual. Acompanhe status de todas 
+                        as otimizações com interface colorida.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Otimização de Rede</h3>
+                    <p class="feature-description">
+                        Otimização da pilha TCP/IP, ping reduzido, prioridade de pacotes aprimorada e redução 
+                        de latência de rede para jogos online.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3 class="feature-title">Limpeza do Sistema</h3>
+                    <p class="feature-description">
+                        Limpeza profunda do sistema, remoção de arquivos temporários, otimização de SSD e 
+                        desativa telemetria do Windows.
+                    </p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3 class="feature-title">Privacidade & Segurança</h3>
+                    <p class="feature-description">
+                        Tweaks avançados de privacidade, remoção de telemetria e reforço de segurança sem 
+                        quebrar funcionalidades do Windows.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beta Info Section -->
+    <section class="beta-info">
+        <div class="container">
+            <div class="beta-card">
+                <div class="beta-badge">Beta Aberta</div>
+                <h2 class="beta-title">🚀 Primeira Beta Test</h2>
+                <p class="beta-description">
+                    Estamos lançando a primeira versão beta do Kelven Optimizer PRO! 
+                    Teste todas as funcionalidades premium gratuitamente e nos ajude a construir 
+                    a melhor ferramenta de otimização Windows do mercado.
+                </p>
+                <a href="https://discord.gg/YnWMgwDgEq" target="_blank" class="discord-button">
+                    <span>💬 Entrar no Discord de Suporte</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">
+                © 2026 Kelven Optimizer PRO - Desenvolvido por kelvenapk
+            </p>
+            <div class="footer-links">
+                <a href="https://discord.gg/YnWMgwDgEq" target="_blank" class="footer-link">Discord</a>
+                <a href="https://github.com/kelvenapk" target="_blank" class="footer-link">GitHub</a>
+                <a href="#" class="footer-link">Documentação</a>
+                <a href="#" class="footer-link">Política de Privacidade</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Matrix Background Effect
+        function createMatrixEffect() {
+            const matrixBg = document.getElementById('matrixBg');
+            const chars = '01アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+            
+            function createMatrixText() {
+                const span = document.createElement('span');
+                span.className = 'matrix-text';
+                span.textContent = chars[Math.floor(Math.random() * chars.length)];
+                span.style.left = Math.random() * 100 + '%';
+                span.style.animationDuration = Math.random() * 3 + 2 + 's';
+                span.style.animationDelay = Math.random() * 2 + 's';
+                matrixBg.appendChild(span);
+                
+                setTimeout(() => {
+                    if (span.parentNode) {
+                        span.parentNode.removeChild(span);
+                    }
+                }, 5000);
+            }
+            
+            setInterval(createMatrixText, 200);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Initialize effects
+        window.addEventListener('load', () => {
+            createMatrixEffect();
+        });
+
+        // Add loading animation to buttons
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') {
+                    e.preventDefault();
+                    alert('Mais informações em breve! Junte-se ao Discord para atualizações.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
