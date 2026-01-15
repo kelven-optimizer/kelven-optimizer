@@ -1,166 +1,275 @@
-# 🚀 Kelven Optimizer PRO  - Beta Test 1.0
+# ⚡ Kelven Optimizer PRO v2.0
 
-&gt; **Painel de Otimização Windows Completo**  
-&gt; Desenvolvido por kelvenapk | Cleanup Pro | 150+ Tweaks Reais | Sistema Completo
+<div align="center">
 
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?color=5865F2&label=Discord&logo=discord&logoColor=white)](https://discord.gg/YnWMgwDgEq)
-[![Version](https://img.shields.io/badge/version-Beta%201.0-blue)](https://github.com/kelvenapk)
-[![Python](https://img.shields.io/badge/python-3.8+-green)](https://python.org)
-[![Windows](https://img.shields.io/badge/windows-10%2F11-blue)](https://microsoft.com)
+![Version](https://img.shields.io/badge/version-2.0-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-lightgrey.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Downloads](https://img.shields.io/github/downloads/kelvenapk/kelven-optimizer/total.svg)
 
----
+**Sistema Inteligente de Otimização para Windows com Detecção Automática de Hardware**
 
-## ⚡ Sobre o Kelven Optimizer PRO
+[Download](https://github.com/kelvenapk/kelven-optimizer/releases/latest) • [Discord](https://discord.gg/gNPhS3m3QF) • [Reportar Bug](https://github.com/kelvenapk/kelven-optimizer/issues)
 
-O **Kelven Optimizer PRO** é uma ferramenta profissional de otimização Windows que combina tecnologia de ponta com interface intuitiva para entregar máxima performance ao seu sistema.
-
-### 🎯 Objetivo
-Transformar seu Windows em uma máquina de performance, eliminando gargalos, reduzindo latência e maximizando FPS em jogos.
+</div>
 
 ---
 
-## 🌟 Funcionalidades Principais
+## 🎯 Visão Geral
 
-### 🧹 **Cleanup Pro**
-- ✅ Limpeza profissional do sistema
-- ✅ Remoção de arquivos temporários
-- ✅ Otimização de registro
-- ✅ Liberação de RAM
-- ✅ Desfragmentação inteligente
+Kelven Optimizer PRO é uma ferramenta completa de otimização para Windows que oferece **157 tweaks inteligentes** organizados em 10 categorias, com detecção automática de hardware e interface moderna.
 
-### 🎮 **Gaming Ultimate**
-- ✅ Modo FPS Máximo
-- ✅ Otimização de rede para jogos
-- ✅ Redução de ping e latência
-- ✅ Priorização de processos
-- ✅ Desativação de DVR e Game Bar
+### ✨ Destaques
 
-### ⚡ **Performance Tweaks**
-- ✅ 150+ tweaks reais e testados
-- ✅ Otimização de CPU e memória
-- ✅ Configurações avançadas de energia
-- ✅ Ajustes de sistema em tempo real
-- ✅ Monitoramento contínuo
-
-### 🌐 **Network Optimizer**
-- ✅ Otimização TCP/IP
-- ✅ DNS inteligente
-- ✅ Redução de latência ultra-baixa
-- ✅ Priorização de pacotes
-- ✅ Configurações específicas por jogo
-
-### 🛡️ **Security & Privacy**
-- ✅ Remoção de telemetria
-- ✅ Tweaks de privacidade avançados
-- ✅ Proteção contra rastreamento
-- ✅ Segurança reforçada
-- ✅ Backup automático
+- 🚀 **157 Tweaks Inteligentes** - Otimizações profundas do sistema
+- 🎮 **Modo Gaming** - Configurações específicas para jogos
+- 🧹 **Limpeza Profissional** - Libera RAM e espaço em disco
+- 🗜️ **Compactação do Windows** - Economiza GB de espaço
+- 🔍 **Detecção de Hardware** - Identifica CPU/GPU automaticamente
+- 📊 **Monitor em Tempo Real** - CPU, RAM e Disco
+- 🎨 **Interface Moderna** - Design dark com animações
+- 🔄 **Atualizações Automáticas** - Sistema integrado ao GitHub
 
 ---
 
-## 📊 Dashboard em Tempo Real
+## 📦 Download e Instalação
 
-![Dashboard Preview](https://via.placeholder.com/800x400/0D1117/0066FF?text=Dashboard+Kelven+Optimizer+PRO)
+### Opção 1: Executável (Recomendado)
 
-- 📈 Monitoramento de CPU, RAM, GPU, Disco
-- 📊 Gráficos em tempo real
-- 🎯 Métricas de FPS estimado
-- ⚡ Monitor de latência de rede
-- 📝 Logs detalhados do sistema
+1. Baixe o arquivo `kelven-optimizer2.0.exe` da [página de releases](https://github.com/kelvenapk/kelven-optimizer/releases/latest)
+2. Execute como **Administrador** (clique direito → Executar como administrador)
+3. Pronto! O programa está pronto para uso
 
----
+### Opção 2: Código Fonte
 
-## 🚀 Como Participar do Beta Test
+```bash
+# Clone o repositório
+git clone https://github.com/kelvenapk/kelven-optimizer.git
+cd kelven-optimizer
 
-### 📋 Requisitos para Testadores
-- Windows 10/11 (64-bit)
-- Privilégios de administrador
-- 2GB RAM mínimo
-- Conexão com internet (para suporte)
-
-### 💬 Comunidade de Suporte
-**Discord:** https://discord.gg/YnWMgwDgEq  
-**Canal:** #kelven-optimizer-pro-beta
+# Execute o programa
+python "teste 3.0.py"
+```
 
 ---
 
-## 🎯 Perfis de Performance
+## 🎯 Categorias de Tweaks
 
-### 🎮 **Gaming Professional**
-- Máximo FPS e baixa latência
-- Otimizações específicas para jogos competitivos
-- Priorização de processos de jogo
+### 🔴 CPU (10 tweaks)
+- Desativa Core Parking
+- Otimiza prioridades do processador
+- Desativa throttling e estados de economia
+- Maximiza performance do CPU
 
-### 🎨 **Creator Pro**
-- Otimizado para produção criativa
-- Balanceamento entre performance e qualidade
-- Melhor renderização de vídeo
+### 🟢 GPU (12 tweaks)
+- Hardware acceleration
+- Desativa power saving
+- Otimiza TDR e preemption
+- Shader cache e MSI mode
 
-### 📺 **Streaming Ultra**
-- Para streamers profissionais
-- Otimização de codificação
-- Estabilidade máxima
+### 🟢 NVIDIA (10 tweaks)
+- Low latency mode
+- Max performance
+- Shader cache otimizado
+- Threaded optimization
 
-### 💼 **Workstation Max**
-- Performance máxima para trabalho
-- Multitarefa otimizada
-- Estabilidade em cargas pesadas
+### 🔴 AMD (10 tweaks)
+- Radeon Anti-Lag
+- Radeon Boost
+- Enhanced Sync
+- FreeSync optimization
 
-### 🔋 **Battery Pro**
-- Máxima economia de energia
-- Extensão de bateria
-- Performance balanceada
+### 🟡 Memory (12 tweaks)
+- Desativa paging executive
+- Large system cache
+- Otimiza pool de memória
+- Desativa compression
 
-### 🧹 **Minimalist OS**
-- Sistema mínimo, máximo desempenho
-- Remoção de bloatware
-- Performance extrema
+### 🟣 Network (15 tweaks)
+- TCP/IP optimization
+- Desativa throttling
+- RSS e Chimney offload
+- QoS packet scheduler
+
+### 🟠 Gaming (15 tweaks)
+- Game mode ativado
+- Prioridades otimizadas
+- Desativa mouse acceleration
+- Gaming audio priority
+
+### 🔵 System (35 tweaks)
+- Desativa telemetria
+- Desativa Windows Defender
+- Desativa Firewall
+- Remove 30+ serviços desnecessários
+
+### 🔴 Debloat (23 tweaks)
+- Remove OneDrive
+- Desativa Xbox services
+- Remove bloatware
+- Otimiza RAM ao máximo
+- Mantém Windows Store funcional
+
+### 🩷 Kernel (15 tweaks)
+- Timer resolution otimizado
+- Desativa kernel paging
+- DPC watchdog optimization
+- Desativa Spectre/Meltdown
+- Boot optimization
 
 ---
 
-## 🛡️ Segurança
+## 🚀 Funcionalidades
 
-### ✅ Backup Automático
-- Backup completo do registro antes de alterações
-- Sistema de restauração integrado
-- Pontos de restauração automáticos
+### 🏠 Dashboard
+- Monitoramento em tempo real de CPU, RAM e Disco
+- Informações de hardware detectado
+- Ações rápidas de otimização
+- Logs do sistema
 
-### ✅ Verificações
-- Checagem de integridade do sistema
-- Validação de permissões
-- Proteção contra alterações críticas
+### ⚡ Smart Tweaks
+- Interface com abas por categoria
+- Aplicação individual ou em massa
+- Seleção automática de GPU (NVIDIA/AMD/Intel)
+- Barra de progresso animada
 
-### ✅ Logs Detalhados
-- Todos os comandos executados são logados
-- Data e hora de cada operação
-- Resultados e erros documentados
+### 🎮 Modo Gaming
+- Otimizações específicas para jogos
+- Reduz latência de rede
+- Maximiza prioridade de GPU
+- Desativa processos desnecessários
+
+### 🧹 Limpeza Pro
+- 3 modos: Rápida, Completa e Profunda
+- Libera RAM sem fechar aplicativos
+- Compactação do Windows integrada
+- Limpeza de arquivos temporários
+
+### 🗜️ Compactação do Windows
+- Compacta sistema operacional
+- Limpa WinSxS
+- Economiza vários GB de espaço
+- Barra de progresso em tempo real
+
+### 🚀 Gerenciador de Inicialização
+- Lista apps que iniciam com Windows
+- Habilita/desabilita facilmente
+- Reduz tempo de boot
+
+### 🔄 Sistema de Atualizações
+- Verifica atualizações no GitHub
+- Changelog integrado
+- Download direto da release
 
 ---
 
-## 🐛 Reportar Bugs
+## ⚙️ Requisitos do Sistema
 
-Encontrou um bug? Reporte no nosso Discord oficial:
+- **OS**: Windows 10 ou Windows 11
+- **RAM**: 4GB mínimo (8GB recomendado)
+- **Espaço**: 100MB livres
+- **Permissões**: Administrador (recomendado)
 
-### 📋 Template de Bug Report
-```markdown
-**Descrição do Bug:**
-[Descreva o que aconteceu]
+---
 
-**Passos para Reproduzir:**
-1. [Primeiro passo]
-2. [Segundo passo]
-3. [Terceiro passo]
+## 🛠️ Compilar do Código Fonte
 
-**Comportamento Esperado:**
-[O que deveria acontecer]
+### Usando o script automático:
+```bash
+build.bat
+```
 
-**Comportamento Atual:**
-[O que realmente aconteceu]
+### Manualmente:
+```bash
+pip install pyinstaller
+pyinstaller --onefile --windowed --name "kelven-optimizer2.0" --icon "icon.ico" --add-data "icon.ico;." "teste 3.0.py"
+```
 
-**Screenshots:**
-[Se aplicável]
+O executável será gerado em: `dist\kelven-optimizer2.0.exe`
 
-**Sistema:**
-- Windows: [versão]
-- Python: [versão]
-- Admin: [sim/não]
+---
+
+## ⚠️ Avisos Importantes
+
+- ⚠️ **Crie um ponto de restauração** antes de aplicar tweaks
+- ⚠️ **Execute como Administrador** para funcionalidade completa
+- ⚠️ Alguns tweaks desativam recursos de segurança (Defender, Firewall)
+- ⚠️ Tweaks de Kernel são avançados e podem afetar estabilidade
+- ⚠️ Use por sua conta e risco
+
+---
+
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](https://via.placeholder.com/800x450/0F0F0F/00F0FF?text=Dashboard)
+
+### Smart Tweaks
+![Tweaks](https://via.placeholder.com/800x450/0F0F0F/FF006E?text=Smart+Tweaks)
+
+### Gaming Mode
+![Gaming](https://via.placeholder.com/800x450/0F0F0F/00FF41?text=Gaming+Mode)
+
+---
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para:
+
+1. Fazer fork do projeto
+2. Criar uma branch para sua feature (`git checkout -b feature/NovaFeature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/NovaFeature`)
+5. Abrir um Pull Request
+
+---
+
+## 📝 Changelog
+
+### v2.0 (2024)
+- ✨ Interface completamente redesenhada
+- 🚀 157 tweaks (anteriormente 84)
+- 🎨 Animações e transições suaves
+- 🗜️ Sistema de compactação do Windows
+- 🔍 Detecção automática de GPU
+- 📊 Barra de progresso para aplicação de tweaks
+- 🩷 Nova categoria: Kernel Tweaks (15 tweaks)
+- 🔴 Categoria Debloat expandida (23 tweaks)
+- 🔵 System tweaks expandido (35 tweaks)
+- 👋 Tela de boas-vindas e despedida
+- 🔄 Sistema de atualizações integrado
+
+---
+
+## 🔗 Links
+
+- **GitHub**: [github.com/kelvenapk](https://github.com/kelvenapk)
+- **Discord**: [discord.gg/gNPhS3m3QF](https://discord.gg/gNPhS3m3QF)
+- **Releases**: [Baixar última versão](https://github.com/kelvenapk/kelven-optimizer/releases/latest)
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 💖 Apoie o Projeto
+
+Se este projeto te ajudou, considere:
+
+- ⭐ Dar uma estrela no GitHub
+- 🐛 Reportar bugs e sugerir melhorias
+- 💬 Entrar no Discord e compartilhar sua experiência
+- 📢 Compartilhar com amigos
+
+---
+
+<div align="center">
+
+**Desenvolvido com 💙 por [kelvenapk](https://github.com/kelvenapk)**
+
+⚡ Kelven Optimizer PRO v2.0 ⚡
+
+</div>
