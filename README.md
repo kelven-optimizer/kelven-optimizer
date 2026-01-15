@@ -198,19 +198,6 @@ O executável será gerado em: `dist\kelven-optimizer2.0.exe`
 
 ---
 
-## 📸 Screenshots
-
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x450/0F0F0F/00F0FF?text=Dashboard)
-
-### Smart Tweaks
-![Tweaks](https://via.placeholder.com/800x450/0F0F0F/FF006E?text=Smart+Tweaks)
-
-### Gaming Mode
-![Gaming](https://via.placeholder.com/800x450/0F0F0F/00FF41?text=Gaming+Mode)
-
----
-
 ## 🤝 Contribuindo
 
 Contribuições são bem-vindas! Sinta-se à vontade para:
