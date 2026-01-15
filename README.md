@@ -48,7 +48,7 @@ git clone https://github.com/kelvenapk/kelven-optimizer.git
 cd kelven-optimizer
 
 # Execute o programa
-python "teste 3.0.py"
+kelven-optimizer2.0.py"
 ```
 
 ---
@@ -182,8 +182,7 @@ build.bat
 ### Manualmente:
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --name "kelven-optimizer2.0" --icon "icon.ico" --add-data "icon.ico;." "teste 3.0.py"
-```
+pyinstaller --onefile --windowed --name "kelven-optimizer2.0" --icon "icon.ico" --add-data "icon.ico;." "kelven-optimizer2.0.py
 
 O executável será gerado em: `dist\kelven-optimizer2.0.exe`
 
