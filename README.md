@@ -212,7 +212,7 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 
 ## 📝 Changelog
 
-### v2.0 (2024)
+### v2.0 (2026)
 - ✨ Interface completamente redesenhada
 - 🚀 157 tweaks (anteriormente 84)
 - 🎨 Animações e transições suaves
